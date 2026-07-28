@@ -1,0 +1,85 @@
+<!doctype html>
+<!--
+  Banner de LinkedIn · 1584×396 (proporción oficial 4:1)
+  Manual de Marca Alexanyer Naranjo v1.0
+
+  Zona segura: la foto de perfil de LinkedIn cubre la esquina inferior
+  izquierda, por eso el contenido vive del centro hacia la derecha.
+
+  Regenerar: node branding/generate-banner.mjs
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    width: 1584px; height: 396px; overflow: hidden; position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: #1D1D1F;
+    background:
+      radial-gradient(circle at 8% 85%, rgba(0,113,227,.10), transparent 38%),
+      radial-gradient(circle at 94% 15%, rgba(88,86,214,.07), transparent 34%),
+      linear-gradient(180deg, #FFFFFF 0%, #F2F3F6 100%);
+    display: flex; align-items: center; justify-content: flex-end;
+  }
+  /* Cuadrícula de puntos: firma visual, desvaneciéndose desde la izquierda */
+  .dots {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(#0071E3 1.3px, transparent 1.3px);
+    background-size: 30px 30px;
+    -webkit-mask-image: linear-gradient(100deg, rgba(0,0,0,.18) 0%, transparent 42%);
+    mask-image: linear-gradient(100deg, rgba(0,0,0,.18) 0%, transparent 42%);
+  }
+  /* Marca compacta arriba a la izquierda (la foto de perfil tapa abajo) */
+  .initials {
+    position: absolute; top: 40px; left: 56px;
+    font-size: 34px; font-weight: 700; letter-spacing: -1.5px; color: #1D1D1F;
+  }
+  .initials .dot { color: #0071E3; }
+
+  .content { position: relative; padding-right: 84px; text-align: right; }
+  .eyebrow {
+    font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 17px; font-weight: 600; letter-spacing: 3px;
+    text-transform: uppercase; color: #0071E3; margin-bottom: 14px;
+  }
+  h1 { font-size: 64px; font-weight: 700; letter-spacing: -2.4px; line-height: 1; }
+  h1 .dot { color: #0071E3; }
+  .sub { margin-top: 12px; font-size: 24px; color: #6E6E73; letter-spacing: -0.3px; }
+
+  .chips { margin-top: 26px; display: flex; gap: 10px; justify-content: flex-end; }
+  .pill {
+    font-size: 17px; font-weight: 600; padding: 9px 20px; border-radius: 100px;
+    border: 1.5px solid #DCDEE4; color: #46464E; background: #FFFFFF;
+  }
+  .pill.hl { background: #0071E3; color: #FFFFFF; border-color: #0071E3; }
+
+  .url {
+    margin-top: 22px;
+    font-family: 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+    font-size: 16px; color: #8C8C94; letter-spacing: 0.5px;
+  }
+  .url b { color: #0051A3; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="dots"></div>
+  <div class="initials">AN<span class="dot">.</span></div>
+
+  <div class="content">
+    <div class="eyebrow">Desarrollador Front-End · Mobile &amp; Web</div>
+    <h1>Alexanyer Naranjo<span class="dot">.</span></h1>
+    <div class="sub">Construyo apps iOS, Android y web que llegan a producción</div>
+    <div class="chips">
+      <span class="pill hl">iOS</span>
+      <span class="pill hl">Android</span>
+      <span class="pill">React Native</span>
+      <span class="pill">Flutter</span>
+      <span class="pill">Vue.js</span>
+      <span class="pill">React.js</span>
+    </div>
+    <div class="url"><b>alexanyer-naranjo.vercel.app</b></div>
+  </div>
+</body>
+</html>
