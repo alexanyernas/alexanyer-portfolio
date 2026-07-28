@@ -1,0 +1,195 @@
+<!doctype html>
+<!--
+  CV ATS-friendly · Alexanyer Naranjo
+  ───────────────────────────────────
+  Reglas aplicadas: una sola columna, texto plano extraíble, sin tablas,
+  sin iconos ni gráficos, encabezados estándar, cronología inversa.
+
+  ⚠️ Actualiza la URL del portafolio cuando tengas dominio real.
+
+  Regenerar el PDF:
+    node cv/generate.mjs
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: A4; margin: 13mm 15mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; }
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1d1d1f;
+    font-size: 10.2pt;
+    line-height: 1.45;
+  }
+  .page { padding: 0; }
+
+  h1 { font-size: 21pt; letter-spacing: -0.5pt; font-weight: 700; }
+  h1 .dot { color: #0071e3; }
+  .headline { font-size: 11.5pt; color: #46464e; margin-top: 3pt; font-weight: 400; }
+  .contact { margin-top: 7pt; font-size: 9.3pt; color: #46464e; }
+  .contact a { color: #0051a3; text-decoration: none; }
+
+  h2 {
+    font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1.2pt;
+    color: #0051a3; font-weight: 700;
+    margin: 15pt 0 6pt; padding-bottom: 3pt;
+    border-bottom: 1px solid #dcdee4;
+  }
+
+  .job { margin-bottom: 10pt; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .role { font-size: 10.8pt; font-weight: 700; }
+  .company { font-weight: 700; color: #0051a3; }
+  .dates { font-size: 9.3pt; color: #6e6e73; white-space: nowrap; padding-left: 12pt; }
+  .place { font-size: 9.3pt; color: #6e6e73; margin-top: 1pt; }
+  ul { margin: 4pt 0 0 14pt; }
+  li { margin-bottom: 2.5pt; }
+
+  .summary { margin-top: 4pt; }
+  .skills p { margin-bottom: 3pt; }
+  .skills b { font-weight: 700; }
+  .edu-degree { font-weight: 700; font-size: 10.8pt; }
+  .two { display: flex; justify-content: space-between; align-items: baseline; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Alexanyer Naranjo<span class="dot">.</span></h1>
+    <p class="headline">Desarrollador Front-End · Aplicaciones Móviles y Web | React Native · Flutter · Ionic · Vue.js · React.js</p>
+    <p class="contact">
+      Venezuela (trabajo remoto) · +58 412 028 3147 · <a href="mailto:alexanyernaranjo@gmail.com">alexanyernaranjo@gmail.com</a><br>
+      LinkedIn: linkedin.com/in/alexanyernas · GitHub: github.com/alexanyernas · Portafolio: alexanyernaranjo.dev
+    </p>
+  </header>
+
+  <section>
+    <h2>Resumen Profesional</h2>
+    <p class="summary">
+      Desarrollador Front-End con más de 5 años de experiencia construyendo aplicaciones móviles y web
+      en producción para los sectores fintech, e-commerce, salud y educación. Especializado en desarrollo
+      móvil iOS y Android con React Native, Flutter e Ionic, y en desarrollo web con Vue.js, React.js y
+      Next.js. Licenciado en Ciencias de la Computación y preparador universitario: base sólida en
+      algoritmos, estructuras de datos y optimización aplicada al rendimiento, la experiencia de usuario
+      y la calidad del código. Más de 32 proyectos entregados.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experiencia Profesional</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="role">Desarrollador Front-End · <span class="company">Protegetuviaje.com</span></p>
+        <p class="dates">Agosto 2024 – Actualidad</p>
+      </div>
+      <p class="place">España · Remoto · Jornada completa</p>
+      <ul>
+        <li>Desarrollo y mantenimiento de una plataforma de seguros de viaje con Vue.js y Next.js.</li>
+        <li>Integración de APIs REST y servicios de negocio sobre infraestructura con Docker y MySQL.</li>
+        <li>Colaboración remota con un equipo distribuido, con foco en rendimiento y experiencia de usuario.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="role">Desarrollador Front-End · <span class="company">M-étrica Consulting</span></p>
+        <p class="dates">Abril 2023 – Julio 2024</p>
+      </div>
+      <p class="place">Venezuela · Remoto</p>
+      <ul>
+        <li>Desarrollo ágil de aplicaciones móviles y web para clientes de múltiples sectores con React Native, React.js, Vue.js y TypeScript.</li>
+        <li>Participación en el ciclo completo de desarrollo: estimación, implementación, revisión de código y despliegue.</li>
+        <li>Adaptación a distintos stacks, equipos y metodologías según cada proyecto de consultoría.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="role">Desarrollador Front-End · <span class="company">Punicorp</span></p>
+        <p class="dates">Enero 2022 – Junio 2023</p>
+      </div>
+      <p class="place">Venezuela · Remoto</p>
+      <ul>
+        <li>Desarrollo de aplicaciones empresariales iOS y Android con Ionic Framework y React Native.</li>
+        <li>Construcción de plataformas web y paneles de administración con React.js, Vue.js y TypeScript.</li>
+        <li>Publicación y mantenimiento de aplicaciones móviles de uso interno y de cara al cliente.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="role">Desarrollador Front-End · <span class="company">Mipto Tech</span></p>
+        <p class="dates">Febrero 2021 – Julio 2021</p>
+      </div>
+      <p class="place">Venezuela · Remoto</p>
+      <ul>
+        <li>Desarrollo de soluciones web especializadas con Vue.js, TypeScript y JavaScript.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="role">Director Ejecutivo · <span class="company">Educa2</span></p>
+        <p class="dates">Enero 2019 – Agosto 2021</p>
+      </div>
+      <p class="place">Venezuela · Remoto</p>
+      <ul>
+        <li>Liderazgo y gestión de proyectos educativos digitales; desarrollo de plataformas de aprendizaje autónomo.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <p class="role">Preparador Universitario · <span class="company">Universidad Central de Venezuela</span></p>
+        <p class="dates">Junio 2018 – Septiembre 2021</p>
+      </div>
+      <p class="place">Caracas, Venezuela · Presencial</p>
+      <ul>
+        <li>Preparador de Algoritmos y Estructuras de Datos (2018) y de Probabilidad y Estadística (2020–2021).</li>
+        <li>Docencia y mentoría académica a estudiantes de ingeniería y computación.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Educación</h2>
+    <div class="two">
+      <p class="edu-degree">Licenciatura en Ciencias de la Computación</p>
+      <p class="dates">2016 – 2026</p>
+    </div>
+    <p class="place">Universidad Central de Venezuela (UCV) · Caracas, Venezuela</p>
+  </section>
+
+  <section>
+    <h2>Certificaciones</h2>
+    <ul>
+      <li>React: De cero a experto (Hooks y MERN)</li>
+      <li>Curso Profesional de JavaScript</li>
+      <li>Curso Profesional de Bases de Datos</li>
+      <li>HTML Desde Cero</li>
+      <li>Congreso de Emprendimiento Universitario UCV</li>
+    </ul>
+  </section>
+
+  <section class="skills">
+    <h2>Habilidades Técnicas</h2>
+    <p><b>Desarrollo móvil:</b> React Native, Flutter, Ionic Framework, iOS, Android, Dart</p>
+    <p><b>Desarrollo web:</b> Vue.js, React.js, Next.js, HTML5, CSS3, WordPress</p>
+    <p><b>Lenguajes:</b> JavaScript, TypeScript, Dart</p>
+    <p><b>Back-end y datos:</b> Node.js, APIs REST, MongoDB, MySQL</p>
+    <p><b>Herramientas y metodologías:</b> Git, Docker, metodologías ágiles (Scrum), revisión de código</p>
+    <p><b>Otros:</b> UI/UX, rendimiento web, accesibilidad, creación de contenido técnico y mentoría (desde 2021)</p>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <p>Español (nativo) · Inglés (básico, lectura técnica)</p>
+  </section>
+
+</div>
+</body>
+</html>

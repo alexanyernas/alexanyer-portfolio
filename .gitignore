@@ -1,0 +1,14 @@
+# Dependencias y build
+node_modules
+dist
+
+# Variables de entorno (claves de EmailJS)
+.env
+.env.local
+
+# Material fuente local y tooling (solo en la raíz; public/assets sí se versiona)
+/assets/
+/.claude/
+
+# Sistema
+.DS_Store

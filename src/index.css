@@ -1,0 +1,74 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/jetbrains-mono';
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Tokens derivados del Manual de Marca v1.0 · Alexanyer Naranjo
+  Azul iOS como único acento · neutros claros · morado solo como matiz
+*/
+@theme {
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
+
+  --color-accent-50: #eaf3fc;
+  --color-accent-100: #d1e5f9;
+  --color-accent-200: #99c6f3;
+  --color-accent-300: #59a2ec;
+  --color-accent-400: #2686e7;
+  --color-accent-500: #0071e3;
+  --color-accent-600: #0063c7;
+  --color-accent-700: #0051a3;
+
+  --color-neutral-50: #f5f5f7;
+  --color-neutral-100: #f2f3f6;
+  --color-neutral-200: #dcdee4;
+  --color-neutral-300: #c7c9d1;
+  --color-neutral-400: #8c8c94;
+  --color-neutral-500: #6e6e73;
+  --color-neutral-600: #46464e;
+  --color-neutral-700: #333336;
+  --color-ink: #1d1d1f;
+
+  --color-tint: #5856d6;
+
+  /* Superficies del modo oscuro — tinta elevada, nunca negro puro */
+  --color-night: #0e0e11;
+  --color-night-soft: #17171b;
+  --color-night-raised: #202027;
+}
+
+html {
+  scroll-padding-top: 96px;
+}
+
+body {
+  @apply bg-white text-ink antialiased dark:bg-night dark:text-neutral-50;
+  font-feature-settings: 'cv11';
+}
+
+::selection {
+  @apply bg-accent-500 text-white;
+}
+
+/* Cuadrícula de puntos — firma visual de la marca */
+.dot-grid {
+  background-image: radial-gradient(var(--color-accent-500) 1.2px, transparent 1.2px);
+  background-size: 30px 30px;
+}
+
+/* Foco visible coherente con el acento (solo elementos realmente enfocables) */
+@layer base {
+  :focus-visible:not([tabindex='-1']) {
+    outline: 2px solid var(--color-accent-500);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

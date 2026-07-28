@@ -1,0 +1,5 @@
+# https://alexanyernaranjo.dev — reemplaza por tu dominio real
+User-agent: *
+Allow: /
+
+Sitemap: https://alexanyernaranjo.dev/sitemap.xml

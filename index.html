@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      ⚠️ DOMINIO: reemplaza https://alexanyernaranjo.dev por tu dominio real
+      (también en public/robots.txt y public/sitemap.xml) antes de publicar.
+    -->
+
+    <!-- Básicos -->
+    <title>Alexanyer Naranjo · Desarrollador Front-End | Mobile & Web</title>
+    <meta name="description" content="Desarrollador Front-End con 5+ años de experiencia. Apps iOS y Android con React Native, Flutter e Ionic; web con Vue.js y React.js. 32 proyectos en producción." />
+    <meta name="author" content="Alexanyer Naranjo" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://alexanyernaranjo.dev/" />
+
+    <!-- Iconos y manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e0e11" media="(prefers-color-scheme: dark)" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Alexanyer Naranjo" />
+    <meta property="og:title" content="Alexanyer Naranjo · Desarrollador Front-End" />
+    <meta property="og:description" content="Apps iOS y Android con React Native, Flutter e Ionic; web con Vue.js y React.js. 5+ años de experiencia y 32 proyectos en producción." />
+    <meta property="og:url" content="https://alexanyernaranjo.dev/" />
+    <meta property="og:image" content="https://alexanyernaranjo.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alexanyer Naranjo — Desarrollador Front-End · Mobile & Web" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:locale:alternate" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@alexanyernas" />
+    <meta name="twitter:creator" content="@alexanyernas" />
+    <meta name="twitter:title" content="Alexanyer Naranjo · Desarrollador Front-End" />
+    <meta name="twitter:description" content="Apps iOS y Android con React Native, Flutter e Ionic; web con Vue.js y React.js. 5+ años de experiencia y 32 proyectos en producción." />
+    <meta name="twitter:image" content="https://alexanyernaranjo.dev/og.png" />
+
+    <!-- Schema.org · ProfilePage + Person + WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://alexanyernaranjo.dev/#page",
+          "url": "https://alexanyernaranjo.dev/",
+          "name": "Alexanyer Naranjo · Desarrollador Front-End",
+          "inLanguage": ["es", "en"],
+          "isPartOf": { "@id": "https://alexanyernaranjo.dev/#website" },
+          "mainEntity": { "@id": "https://alexanyernaranjo.dev/#person" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://alexanyernaranjo.dev/#website",
+          "url": "https://alexanyernaranjo.dev/",
+          "name": "Alexanyer Naranjo — Portafolio",
+          "inLanguage": ["es", "en"],
+          "publisher": { "@id": "https://alexanyernaranjo.dev/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://alexanyernaranjo.dev/#person",
+          "name": "Alexanyer Naranjo",
+          "url": "https://alexanyernaranjo.dev/",
+          "image": "https://alexanyernaranjo.dev/assets/me.webp",
+          "jobTitle": "Desarrollador Front-End",
+          "description": "Desarrollador Front-End especializado en aplicaciones móviles (React Native, Flutter, Ionic) y web (Vue.js, React.js), con más de 5 años de experiencia.",
+          "email": "mailto:alexanyernaranjo@gmail.com",
+          "nationality": { "@type": "Country", "name": "Venezuela" },
+          "worksFor": { "@type": "Organization", "name": "Protegetuviaje.com" },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Universidad Central de Venezuela",
+            "sameAs": "https://es.wikipedia.org/wiki/Universidad_Central_de_Venezuela"
+          },
+          "knowsLanguage": ["es", "en"],
+          "knowsAbout": [
+            "React Native", "Flutter", "Ionic", "Vue.js", "React.js", "Next.js",
+            "TypeScript", "JavaScript", "Node.js", "iOS", "Android",
+            "Desarrollo Front-End", "Desarrollo móvil", "UI/UX"
+          ],
+          "sameAs": [
+            "https://github.com/alexanyernas",
+            "https://linkedin.com/in/alexanyernas",
+            "https://youtube.com/@AlexanyerNaranjo",
+            "https://twitter.com/alexanyernas",
+            "https://instagram.com/alexanyernas"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <script>
+      // Aplica el tema antes del primer paint para evitar destellos.
+      // ?theme=light|dark permite forzarlo (útil para compartir y probar).
+      const forced = new URLSearchParams(location.search).get('theme')
+      const stored = forced ?? localStorage.getItem('theme')
+      const dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+      document.documentElement.classList.toggle('dark', dark)
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="font-family: -apple-system, 'Segoe UI', Arial, sans-serif; max-width: 640px; margin: 80px auto; padding: 0 24px; color: #1d1d1f; line-height: 1.6;">
+        <h1 style="letter-spacing: -1px;">Alexanyer Naranjo<span style="color:#0071e3">.</span></h1>
+        <p>Desarrollador Front-End con 5+ años de experiencia. Apps iOS y Android con React Native, Flutter e Ionic; web con Vue.js y React.js.</p>
+        <p>Este portafolio necesita JavaScript. Escríbeme a <a href="mailto:alexanyernaranjo@gmail.com" style="color:#0071e3">alexanyernaranjo@gmail.com</a> o encuéntrame en <a href="https://linkedin.com/in/alexanyernas" style="color:#0071e3">LinkedIn</a>.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

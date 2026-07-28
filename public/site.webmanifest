@@ -1,0 +1,12 @@
+{
+  "name": "Alexanyer Naranjo · Desarrollador Front-End",
+  "short_name": "Alexanyer",
+  "description": "Portafolio de Alexanyer Naranjo — apps móviles y web.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#0071e3",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
