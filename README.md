@@ -24,14 +24,13 @@ npm run preview   # sirve el build
 El CV descargable vive en `public/cv-alexanyer-naranjo.pdf` y se genera desde `cv/cv-es.html`
 (una columna, texto extraíble, sin tablas ni gráficos — optimizado para filtros ATS).
 Para editarlo: modifica el HTML y ejecuta `node cv/generate.mjs`.
-Recuerda actualizar la URL del portafolio dentro del CV cuando tengas dominio real.
 
 ## SEO
 
 - Metadatos completos, Open Graph y Twitter Cards en `index.html`; título/descripción se sincronizan con el idioma activo (`src/seo.ts`).
 - Datos estructurados Schema.org (`ProfilePage` + `Person` + `WebSite`) en JSON-LD.
 - `public/og.png` (1200×630), `robots.txt`, `sitemap.xml`, `site.webmanifest`, `apple-touch-icon.png`.
-- **Antes de publicar**: reemplaza `https://alexanyernaranjo.dev` por el dominio real en `index.html`, `public/robots.txt` y `public/sitemap.xml`.
+- URL oficial: `https://alexanyer-naranjo.vercel.app` (si algún día cambia el dominio, actualízalo en `index.html`, `public/robots.txt`, `public/sitemap.xml` y `cv/cv-es.html`, y regenera el CV).
 
 ## Formulario de contacto (EmailJS)
 
